@@ -13,7 +13,7 @@ if 'DYNO' in environ:
 else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
-FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN','lazy-gangster-baby-lazydeveloperr.koyeb.app') else APP_NAME+'.herokuapp.com'
+FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN','stream20k-kannadhasa2020.koyeb.app') else APP_NAME+'.herokuapp.com'
 URL = "https://{}/".format(FQDN) if ON_HEROKU or NO_PORT else \
     "http://{}:{}/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
@@ -29,22 +29,22 @@ if HAS_SSL:
 else:
     URL = "http://{}/".format(FQDN)
 UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', None))
-BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
-STREAM_LOGS = environ.get('STREAM_LOGS','-1001895607162')
+BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001950363096")).split())) 
+STREAM_LOGS = environ.get('STREAM_LOGS','-1001950363096')
 SESSION = environ.get('SESSION','MissRozy')
 CUSTOM_CAPTION = environ.get('CUSTOM_CAPTION')
 
 
 class Config(object):
-	API_ID = int(os.environ.get("API_ID", 13323016))
-	API_HASH = os.environ.get("API_HASH", "13323016")
-	BOT_TOKEN = os.environ.get("BOT_TOKEN","6144687436:AAGShuVn551CQHCWjRkdoBIteGgV0SUWxBo")
+	API_ID = int(os.environ.get("API_ID", "26872474"))
+	API_HASH = os.environ.get("API_HASH", "f8d3a289bf28a13a7159ad0b2ed114e7")
+	BOT_TOKEN = os.environ.get("BOT_TOKEN","5916738939:AAE0iLo5uIBu0X0SeZwQke3hMTxIDcjodvM")
 	BOT_USERNAME = os.environ.get("BOT_USERNAME" , "MissRozy_BOT")
-	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001772120203))
-	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5965340120"))
-	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://lazy:Zabintkhab7808@lazydev786.lpvunl5.mongodb.net/?retryWrites=true&w=majority")
-	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001765107260")
-	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001895607162")
+	DB_CHANNEL = int(os.environ.get("DB_CHANNEL", -1001850979293))
+	BOT_OWNER = int(os.environ.get("BOT_OWNER", "5211097531"))
+	DATABASE_URL = os.environ.get("DATABASE_URL","mongodb+srv://King:king@file.fuxewu1.mongodb.net/?retryWrites=true&w=majority")
+	UPDATES_CHANNEL = os.environ.get("UPDATES_CHANNEL", "-1001632042507")
+	LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "-1001850979293")
 	BANNED_USERS = set(int(x) for x in os.environ.get("BANNED_USERS", "1234567890").split())
 	FORWARD_AS_COPY = bool(os.environ.get("FORWARD_AS_COPY", True))
 	BROADCAST_AS_COPY = bool(os.environ.get("BROADCAST_AS_COPY", False))
@@ -56,7 +56,7 @@ class Config(object):
 	LPCH_ADMIN_USRMN = os.environ.get("LPCH_ADMIN_USRMN")
 	LP_CUSTOM_TEMPLATE= os.environ.get("LP_CUSTOM_TEMPLATE")
   # LP_CUSTOM_TEMPLATE= os.environ.get("LP_CUSTOM_TEMPLATE","{file_name} - example \n\n Please Upadate this template acording to you @LazyDeveloperr ")
-	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001362659779 -1001255795497").split()))
+	BANNED_CHAT_IDS = list(set(int(x) for x in os.environ.get("BANNED_CHAT_IDS", "-1001950363096").split()))
 	OTHER_USERS_CAN_SAVE_FILE = bool(os.environ.get("OTHER_USERS_CAN_SAVE_FILE", True))
 	AUTO_DELETE_TIME = int(os.environ.get('AUTO_DELETE_TIME', 20))
 
